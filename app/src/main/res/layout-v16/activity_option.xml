@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hala.practice.Option"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#fdfdfe"
+            android:textSize="21sp"
+            android:fontFamily="@font/sourcesanspro_semibold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/logo"
+                android:id="@+id/logo_picker"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/avatar_1"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:background="@drawable/main_name_b"
+                android:gravity="center"
+                android:textSize="21sp"
+                android:textColor="#fdfdfe"
+                android:textColorHint="#7dfdfdfe"
+                android:fontFamily="@font/sourcesanspro_regular" />
+
+        </LinearLayout>
+
+        <!-- The avatar list -->
+        <LinearLayout
+            android:id="@+id/avatar_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_scroll">
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sound_effects"
+            android:textColor="#fdfdfe"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sourcesanspro_semibold"
+            android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="33dp"
+                    android:text="On"
+                    android:textColor="#fdfdfe"
+                    android:fontFamily="@font/sourcesanspro_semibold"
+                    android:background="@drawable/on_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="19sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/language"
+                android:textColor="#fdfdfe"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="choose here"
+                    android:textColor="#fdfdfe"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERSION 1.0"
+            android:layout_gravity="center"
+            android:textColor="#fdfdfe"
+            android:fontFamily="@font/sourcesanspro_light"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:layout_gravity="center"
+            android:textColor="#fdfdfe"
+            android:fontFamily="@font/sourcesanspro_extralight"
+            android:textSize="12sp"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/back"
+            android:textColor="#fdfdfe"
+            android:textSize="21sp"
+            android:fontFamily="@font/sourcesanspro_semibold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

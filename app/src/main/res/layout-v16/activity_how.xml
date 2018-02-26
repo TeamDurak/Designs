@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hala.practice.HowTo"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play_head"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fdfdfe"
+        android:textSize="21sp"
+        android:fontFamily="@font/sourcesanspro_semibold"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
